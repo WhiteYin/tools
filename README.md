@@ -9,5 +9,5 @@
 [博客地址](http://blog.csdn.net/lichking11/article/details/78296061)  
 实现一个滑动刻度尺并动态读取刻度的demo。
 
-2. progress-bar/进度条效果
+2. progress-bar/进度条效果  
 ![效果图](http://ox34ivs2j.bkt.clouddn.com/%E8%BF%9B%E5%BA%A6%E6%9D%A1.gif)
