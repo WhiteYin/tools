@@ -11,3 +11,6 @@
 
 2. progress-bar/进度条效果  
 ![效果图](http://ox34ivs2j.bkt.clouddn.com/%E8%BF%9B%E5%BA%A6%E6%9D%A1.gif)
+
+3. loading/等待动画效果  
+![效果图](http://ox34ivs2j.bkt.clouddn.com/loading.gif)

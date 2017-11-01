@@ -32,5 +32,5 @@
 }
 */
 @keyframes progress{
-    to {width:100%;}
+    to {width:100%;background-position: 1000px 0px}
 }

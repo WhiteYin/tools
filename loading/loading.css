@@ -1,0 +1,129 @@
+@keyframes caret {
+    50% {border-color: transparent;}
+}
+
+@keyframes text {
+    from {width: 0;}
+}
+
+.loading-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:400px;
+    height: 100px;
+    margin: 20px auto;
+    border: 3px solid #444;
+}
+
+.load-text {
+    width: 11ch;
+    margin: 0 auto;
+    overflow: hidden;
+    background: rgba(181, 219, 136,0.2);
+    color: #b1f1f3;
+    border-right: 3px solid #000000;
+    font: bold 400% Consolas, Monaco, monospace;
+    animation: caret 0.5s step-end infinite ,text 5s infinite steps(11);
+}
+
+@keyframes circle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-circle {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border-top: 8px solid #b1f1f3;
+    border-left: 8px solid #b1f1f3;
+    border-bottom: 8px solid #b1f1f3;
+    border-right: 8px solid orange;
+    animation: circle 0.5s infinite linear;
+}
+
+.loading-circle-two{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    background-image: url(loading.png);
+    background-size: cover;
+}
+
+.mask{
+    position: absolute;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    border: 45px solid transparent;
+    border-left: 45px solid rgba(255, 254, 254, 0.7);
+    animation: circle 0.5s infinite linear;
+}
+
+@keyframes round {
+    50% {
+        margin-left: 25px;
+    }
+    100%{
+        z-index: 5;
+    }
+}
+
+#circle-one{
+    position: absolute;
+    margin-left: -25px;
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    z-index: -5;
+    background-color: rgb(191, 241, 10);
+    animation: round 2s infinite linear;
+}
+
+#circle-two{
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    z-index: 0;
+    background-color: rgb(241, 168, 10);
+}
+
+@keyframes jump {
+    50% {
+       transform: translateY(42px);
+    }
+}
+
+.ball{
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(241, 168, 10);
+}
+
+#ball-one {
+    animation: jump 1s infinite cubic-bezier(0.5, 0.01, 0.5, 0.98);
+}
+
+#ball-two {
+    animation: jump 1s 0.125s infinite cubic-bezier(0.5, 0.01, 0.5, 0.98);
+}
+
+#ball-three {
+    animation: jump 1s 0.375s infinite cubic-bezier(0.5, 0.01, 0.5, 0.98);
+}
+
+#ball-four {
+    animation: jump 1s 0.5s infinite cubic-bezier(0.5, 0.01, 0.5, 0.98);
+}
