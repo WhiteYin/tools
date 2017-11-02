@@ -1,3 +1,8 @@
+*{
+    margin:0;
+    padding:0;
+}
+
 @keyframes caret {
     50% {border-color: transparent;}
 }
@@ -126,4 +131,68 @@
 
 #ball-four {
     animation: jump 1s 0.5s infinite cubic-bezier(0.5, 0.01, 0.5, 0.98);
+}
+
+@keyframes left-circle {
+    50% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(225deg);
+    }
+}
+
+@keyframes right-circle {
+    50%,100% {
+        transform: rotate(135deg);
+    }
+}
+
+.loading-circle-three {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.circle-three {
+    height: 100px;
+    width: 50px;
+    position: absolute;
+    top:0;
+    overflow: hidden;
+}
+
+.left-box{
+    left:0;
+}
+
+.right-box{
+    right: 0;
+}
+/*左右圆的高度宽度要微调*/
+.left-circle{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    border: 5px solid #d45810;
+    border-top-color: transparent; 
+    border-right-color: transparent; 
+    transform: rotate(45deg);
+    animation: left-circle 2s infinite linear;
+}
+
+.right-circle{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    border: 5px solid #d45810;
+    transform: rotate(45deg);
+    border-bottom-color: transparent;
+    border-top-color: transparent; 
+    animation: right-circle 2s infinite linear;
 }
