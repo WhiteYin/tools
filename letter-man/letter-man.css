@@ -1,0 +1,168 @@
+#wrapper {
+    font-size: 0;
+    width: 500px;
+    margin: 300px auto;
+    text-align: center;
+}
+
+.letter {
+    display: inline-block;
+    font-size: 20px;
+}
+:root{
+    --animation-time:4s;
+    --animation-count:infinite;
+}
+@keyframes animation1{
+    from,to{
+        transform:translate(0,0);
+    }
+    25%,75%{
+        transform:translate(100px,20px);
+    }
+}
+
+@keyframes animation3{
+    from,to{
+        transform:translate(0,0);
+    }
+    25%,75%{
+        transform:translate(80px,60px);
+    }
+}
+
+@keyframes animation4{
+    from,to{
+        transform:translate(0,0);
+    }
+    25%,75%{
+        transform:translate(60px,80px);
+    }
+}
+
+@keyframes animation6{
+    from,to{
+        transform:translate(0,0);
+    }
+    25%,75%{
+        transform:translate(70px,80px);
+    }
+}
+
+
+@keyframes animation7{
+    from,to{
+        transform:translate(0,0) ;
+    }
+    25%,75%{
+        transform:translate(10px,0) rotate(150deg);
+    }
+    50%{
+        transform:translate(10px,15px) rotate(100deg);
+    }
+}
+
+
+@keyframes animation8{
+    from,to{
+        transform:translate(0,0);
+    }
+    25%,75%{
+        transform:translate(24px,0);
+    }
+}
+
+
+@keyframes animation9{
+    from,to{
+        transform:translate(0,0);
+    }
+    25%,75%{
+        transform:translate(25px,60px);
+    }
+}
+
+
+@keyframes animation11{
+    from,to{
+        transform:translate(0,0);
+    }
+    25%,75%{
+        transform:translate(-20px,10px);
+    }
+    50%{
+        transform:translate(-15px,15px);
+    }
+}
+
+
+@keyframes animation12{
+    from,to{
+        transform:translate(0,0);
+    }
+    25%,75%{
+        transform:translate(10px,35px);
+    }
+}
+
+@keyframes animation13{
+    from,to{
+        transform:translate(0,0);
+    }
+    25%,75%{
+        transform:translate(-28px,40px);
+    }
+}
+
+@keyframes animation14{
+    from,to{
+        transform:translate(0,0);
+    }
+    25%,75%{
+        transform:translate(-24px,25px) rotate(135deg);
+    }
+}
+
+#letter1 {
+    animation: animation1 var(--animation-time) var(--animation-count) ease;
+}
+
+#letter3 {
+    animation: animation3 var(--animation-time) var(--animation-count) ease;
+}
+
+#letter4 {
+    animation: animation4 var(--animation-time) var(--animation-count) ease;
+}
+
+#letter6 {
+    animation: animation6 var(--animation-time) var(--animation-count) ease;
+}
+
+#letter7 {
+    animation: animation7 var(--animation-time) var(--animation-count) ease;
+}
+
+#letter8 {
+    animation: animation8 var(--animation-time) var(--animation-count) ease;
+}
+
+#letter9 {
+    animation: animation9 var(--animation-time) var(--animation-count) ease;
+}
+
+#letter11 {
+    animation: animation11 var(--animation-time) var(--animation-count) ease;
+}
+
+#letter12 {
+    animation: animation12 var(--animation-time) var(--animation-count) ease;
+}
+
+#letter13 {
+    animation: animation13 var(--animation-time) var(--animation-count) ease;
+}
+
+#letter14 {
+    animation: animation14 var(--animation-time) var(--animation-count) ease;
+}
