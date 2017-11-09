@@ -15,5 +15,5 @@
 3. loading/等待动画效果  
 ![效果图](http://ox34ivs2j.bkt.clouddn.com/loading.gif)
 
-4. letter-man/字母小人
+4. letter-man/字母小人  
 ![效果图](http://ox34ivs2j.bkt.clouddn.com/letter-man.gif)
